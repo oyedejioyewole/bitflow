@@ -74,7 +74,6 @@ export default defineNuxtConfig({
       Disallow: "/js",
     },
   },
-  ssr: false,
   css: [
     "~/assets/css/fontawesome.min.css",
     "~/assets/font-awesome-brands/css/brands.min.css",
