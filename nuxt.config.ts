@@ -12,13 +12,6 @@ export default defineNuxtConfig({
           content: "Impossibility is just an understatement",
         },
         { name: "format-detection", content: "telephone=no" },
-        {
-          name: "google-site-verification",
-          content:
-            process.env.NODE_ENV === "production"
-              ? process.env.GOOGLE_SITE_VERIFICATION_TOKEN
-              : "",
-        },
         { property: "og:type", content: "website" },
         { property: "og:url", content: "https://bitflow.vercel.app/" },
         { property: "og:title", content: "Bitflow" },
@@ -38,6 +31,13 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" },
+        {
+          rel: "preload",
+          as: "font",
+          href: "/fonts/themify.woff?-fvbane",
+          type: "font/woff2",
+          crossorigin: "anonymous",
+        },
       ],
       script: [
         { src: "/js/jquery-3.5.1.min.js", body: true, defer: true },
