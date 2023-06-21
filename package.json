@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@nuxt/image-edge": "1.0.0-27919678.2f5b64b",
-    "nuxt": "3.2.2"
+    "nuxt": "3.4.3"
   },
   "dependencies": {
     "@nuxtjs/robots": "^3.0.0",
